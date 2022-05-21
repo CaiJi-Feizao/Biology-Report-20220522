@@ -1,39 +1,21 @@
-\documentclass[UTF8,a4paper,11 pt]{ctexart}%字符标准，纸张，字体大小，文档类型，自行打印11pt，单位打印12pt
-\usepackage{mathtools,amssymb,array,amsthm,amsmath}%数学宏包
-\usepackage{geometry,ulem,graphicx,longtable,caption2,cite,fancyhdr,multicol,color}%通用宏包
-\geometry{a4paper,left=1.5cm, right=1.5cm, top=2.6cm, bottom=3cm}%页面布局
-\usepackage{siunitx,xfp,empheq,unicode-math}
-\sisetup{
-	separate-uncertainty = true,
-	inter-unit-product = \ensuremath{{}\cdot{}}
-}%单位及预设
-\usepackage{chemfig,mhchem}%化学宏包
-\newcommand\dif{\mathop{}\!\mathrm{d}}%定义微分算子
-\newcommand\eu{\mathrm{e}}%定义自然常数
-%\renewcommand\bar{\overline}
-%\renewcommand\vec{\overrightarrow}
+\documentclass[UTF8,a4paper,11 pt]{ctexart}
+\usepackage{mathtools,amssymb,array,amsthm,amsmath}
+\usepackage{geometry,ulem,graphicx,fancyhdr,color,tikz}
+\geometry{a4paper,left=1.5cm, right=1.5cm, top=2.6cm, bottom=3cm}
 \everymath{\displaystyle}%行间公式
-\usepackage{xeCJK,wrapfig}
-\usepackage[hidelinks]{hyperref}
+\usepackage{xeCJK}
 \xeCJKsetup{
 	CJKecglue={\:}
 }
-\AtBeginDocument{
-	\let\mathbb\relax
-	\DeclareMathAlphabet{\mathbb}{U}{msb}{m}{n}
-}
-\usetikzlibrary{decorations.pathmorphing,patterns,fadings}
-\usetikzlibrary {patterns.meta}
+\usetikzlibrary{patterns,fadings}
 \setlength{\lineskip}{8pt}
 \setlength{\lineskiplimit}{8pt}
 \begin{document}
 	\setlength{\lineskip}{8pt}
 	\setlength{\lineskiplimit}{8pt}
 	\pagestyle{fancy}
-	\fancyhead[L]{生物简述报告--20220522}%左页眉，section
-	\fancyhead[R]{Written By Feizao From Class 5 With \LaTeX}%右页眉，subsection
-	%\fancyfoot[L]{Written By Feizao With \LaTeX} %左页脚
-	%\fancyfoot[R]{\thepage} %右页脚
+	\fancyhead[L]{生物简述报告--20220522}
+	\fancyhead[R]{Written By Feizao From Class 5 With \LaTeX}
 	\fancyhead[C]{} %中页脚
 	\fancyfoot[C]{\thepage}
 	\begin{center}
@@ -916,7 +898,7 @@
 	右侧Release处进行(可选源码Source Code或PDF发行版)。
 
 	更多详细信息请见目录下README.md文件。
-	\\\textbf{纠错}
+	\\\textbf{纠错：}
 	
 	可在GitHub提出Issue或发送问题至QQ
 	与微信私信抑或邮箱1077386304@qq.com，愿您不吝赐教。
