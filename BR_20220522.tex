@@ -11,6 +11,7 @@ top=2.6cm, bottom=3cm}%页面布局
 \usetikzlibrary{patterns,fadings}
 \setlength{\lineskip}{8pt}
 \setlength{\lineskiplimit}{8pt}
+
 \newcommand{\lan}{
 	\begin{scope}[xshift=0.025 cm];
 		\draw[color=blue, fill=blue] (0,0)rectangle+(.15,1);
@@ -161,7 +162,7 @@ top=2.6cm, bottom=3cm}%页面布局
 				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置C
 				\draw[fill=purple] (0,-1) -- (0,0)--(.5,0)--(.5,-1)arc (0:180:0.25);
 				\node at (.25,-.25) {C};
-		\end{scope}
+			\end{scope}
 		}
 			\foreach \x in {.25,1.75,2.5,4,6.25,9.25,10.75}{
 				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置G
