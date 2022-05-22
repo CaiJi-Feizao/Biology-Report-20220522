@@ -1,7 +1,8 @@
-\documentclass[UTF8,a4paper,11 pt]{ctexart}
-\usepackage{mathtools,amssymb,array,amsthm,amsmath}
-\usepackage{geometry,ulem,graphicx,fancyhdr,color,tikz}
-\geometry{a4paper,left=1.5cm, right=1.5cm, top=2.6cm, bottom=3cm}
+\documentclass[UTF8,a4paper,11 pt]{ctexart}%字符标准，纸张，字体大小，文档类型，自行打印11pt，单位打印12pt
+\usepackage{mathtools,amssymb,array,amsthm,amsmath}%数学宏包
+\usepackage{geometry,ulem,graphicx,fancyhdr,color,tikz}%通用宏包
+\geometry{a4paper,left=1.5cm, right=1.5cm, 
+top=2.6cm, bottom=3cm}%页面布局
 \everymath{\displaystyle}%行间公式
 \usepackage{xeCJK}
 \xeCJKsetup{
@@ -10,12 +11,116 @@
 \usetikzlibrary{patterns,fadings}
 \setlength{\lineskip}{8pt}
 \setlength{\lineskiplimit}{8pt}
+\newcommand{\lan}{
+	\begin{scope}[xshift=0.025 cm];
+		\draw[color=blue, fill=blue] (0,0)rectangle+(.15,1);
+		\draw[blue] (0.1,.95)--(.175,1.15);
+		\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
+			\draw[color=blue, fill=blue, rotate=-20]
+			(0,0)rectangle +(.125,.75);
+			\draw[color=blue, fill=blue, rotate=-20]
+			(0,0)rectangle +(.125/3,.85);
+		\end{scope}
+		\begin{scope}[xshift=.325 cm, yshift=1 cm]
+			\draw[color=orange, fill=orange, rotate=-20]
+			(0,0)rectangle +(-.125,.75);
+			\draw[color=orange, fill=orange, rotate=-20]
+			(0,0)rectangle +(-.125/3,.85);
+		\end{scope}
+	\end{scope}
+	\begin{scope}[xshift=-0.025 cm, xscale=-1];
+		\draw[color=blue, fill=blue] (0,0)rectangle+(.15,1);
+		\draw[blue] (0.1,.95)--(.175,1.15);
+		\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
+			\draw[color=blue, fill=blue, rotate=-20]
+			(0,0)rectangle +(.125,.75);
+			\draw[color=blue, fill=blue, rotate=-20]
+			(0,0)rectangle +(.125/3,.85);
+		\end{scope}
+		\begin{scope}[xshift=.325 cm, yshift=1 cm]
+			\draw[color=orange, fill=orange, rotate=-20]
+			(0,0)rectangle +(-.125,.75);
+			\draw[color=orange, fill=orange, rotate=-20]
+			(0,0)rectangle +(-.125/3,.85);
+		\end{scope}
+	\end{scope}
+}
+\newcommand{\hong}{
+	\begin{scope}[xshift=0.025 cm];
+		\draw[color=red, fill=red] (0,0)rectangle+(.15,1);
+		\draw[red] (0.1,.95)--(.175,1.15);
+		\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
+			\draw[color=red, fill=red, rotate=-20]
+			(0,0)rectangle +(.125,.75);
+			\draw[color=red, fill=red, rotate=-20]
+			(0,0)rectangle +(.125/3,.85);
+		\end{scope}
+		\begin{scope}[xshift=.325 cm, yshift=1 cm]
+			\draw[color=orange, fill=orange, rotate=-20]
+			(0,0)rectangle +(-.125,.75);
+			\draw[color=orange, fill=orange, rotate=-20]
+			(0,0)rectangle +(-.125/3,.85);
+		\end{scope}
+	\end{scope}
+	\begin{scope}[xshift=-0.025 cm, xscale=-1];
+		\draw[color=red, fill=red] (0,0)rectangle+(.15,1);
+		\draw[red] (0.1,.95)--(.175,1.15);
+		\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
+			\draw[color=red, fill=red, rotate=-20]
+			(0,0)rectangle +(.125,.75);
+			\draw[color=red, fill=red, rotate=-20]
+			(0,0)rectangle +(.125/3,.85);
+		\end{scope}
+		\begin{scope}[xshift=.325 cm, yshift=1 cm]
+			\draw[color=orange, fill=orange, rotate=-20]
+			(0,0)rectangle +(-.125,.75);
+			\draw[color=orange, fill=orange, rotate=-20]
+			(0,0)rectangle +(-.125/3,.85);
+		\end{scope}
+	\end{scope}
+}
+\newcommand{\lv}{
+	\begin{scope}[xshift=0.025 cm];
+		\draw[color=green, fill=green] (0,0)rectangle+(.15,1);
+		\draw[green] (0.1,.95)--(.175,1.15);
+		\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
+			\draw[color=green, fill=green, rotate=-20]
+			(0,0)rectangle +(.125,.75);
+			\draw[color=green, fill=green, rotate=-20]
+			(0,0)rectangle +(.125/3,.85);
+		\end{scope}
+		\begin{scope}[xshift=.325 cm, yshift=1 cm]
+			\draw[color=orange, fill=orange, rotate=-20]
+			(0,0)rectangle +(-.125,.75);
+			\draw[color=orange, fill=orange, rotate=-20]
+			(0,0)rectangle +(-.125/3,.85);
+		\end{scope}
+	\end{scope}
+	\begin{scope}[xshift=-0.025 cm, xscale=-1];
+		\draw[color=green, fill=green] (0,0)rectangle+(.15,1);
+		\draw[green] (0.1,.95)--(.175,1.15);
+		\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
+			\draw[color=green, fill=green, rotate=-20]
+			(0,0)rectangle +(.125,.75);
+			\draw[color=green, fill=green, rotate=-20]
+			(0,0)rectangle +(.125/3,.85);
+		\end{scope}
+		\begin{scope}[xshift=.325 cm, yshift=1 cm]
+			\draw[color=orange, fill=orange, rotate=-20]
+			(0,0)rectangle +(-.125,.75);
+			\draw[color=orange, fill=orange, rotate=-20]
+			(0,0)rectangle +(-.125/3,.85);
+		\end{scope}
+	\end{scope}
+}
 \begin{document}
 	\setlength{\lineskip}{8pt}
 	\setlength{\lineskiplimit}{8pt}
 	\pagestyle{fancy}
-	\fancyhead[L]{生物简述报告--20220522}
-	\fancyhead[R]{Written By Feizao From Class 5 With \LaTeX}
+	\fancyhead[L]{生物简述报告--20220522}%左页眉，section
+	\fancyhead[R]{Written By Feizao From Class 5 With \LaTeX}%右页眉，subsection
+	%\fancyfoot[L]{Written By Feizao With \LaTeX} %左页脚
+	%\fancyfoot[R]{\thepage} %右页脚
 	\fancyhead[C]{} %中页脚
 	\fancyfoot[C]{\thepage}
 	\begin{center}
@@ -450,261 +555,44 @@
 				\draw[fill=pink] (3,3.4-2.5) circle (0.25);
 				\begin{scope}[xshift=6cm,yshift=2 cm]%新抗
 					\begin{scope}[rotate=21]
-						\begin{scope}[xshift=0.025 cm];
-							\draw[color=blue, fill=blue] (0,0)rectangle+(.15,1);
-							\draw[blue] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=blue, fill=blue, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=blue, fill=blue, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
-						\begin{scope}[xshift=-0.025 cm, xscale=-1];
-							\draw[color=blue, fill=blue] (0,0)rectangle+(.15,1);
-							\draw[blue] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=blue, fill=blue, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=blue, fill=blue, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
+						\lan
 						\shade [ball color=gold] (0,-.1) circle (0.15);
 					\end{scope}
 				\end{scope}
 				\begin{scope}[xshift=4.7cm,yshift=.5 cm]%控
 					\begin{scope}[rotate=-22]
-						\begin{scope}[xshift=0.025 cm];
-							\draw[color=green, fill=green] (0,0)rectangle+(.15,1);
-							\draw[green] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=green, fill=green, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=green, fill=green, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
-						\begin{scope}[xshift=-0.025 cm, xscale=-1];
-							\draw[color=green, fill=green] (0,0)rectangle+(.15,1);
-							\draw[green] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=green, fill=green, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=green, fill=green, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
+						\lv
 						\shade [ball color=gold] (0,-.1) circle (0.15);
 					\end{scope}
 				\end{scope}
 				\begin{scope}[xshift=7cm,yshift=2.5 cm]%新抗
 					\begin{scope}[rotate=154]
-						\begin{scope}[xshift=0.025 cm];
-							\draw[color=blue, fill=blue] (0,0)rectangle+(.15,1);
-							\draw[blue] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=blue, fill=blue, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=blue, fill=blue, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
-						\begin{scope}[xshift=-0.025 cm, xscale=-1];
-							\draw[color=blue, fill=blue] (0,0)rectangle+(.15,1);
-							\draw[blue] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=blue, fill=blue, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=blue, fill=blue, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
+						\lan
 						\shade [ball color=gold] (0,-.1) circle (0.15);
 					\end{scope}
 				\end{scope}
 				\begin{scope}[xshift=7cm,yshift=2cm]%控
 					\begin{scope}[rotate=-2]
-						\begin{scope}[xshift=0.025 cm];
-							\draw[color=green, fill=green] (0,0)rectangle+(.15,1);
-							\draw[green] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=green, fill=green, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=green, fill=green, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
-						\begin{scope}[xshift=-0.025 cm, xscale=-1];
-							\draw[color=green, fill=green] (0,0)rectangle+(.15,1);
-							\draw[green] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=green, fill=green, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=green, fill=green, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
+						\lv
 						\shade [ball color=gold] (0,-.1) circle (0.15);
 					\end{scope}
 				\end{scope}
 				\begin{scope}[xshift=4.3cm,yshift=2.2 cm]%新抗
 					\begin{scope}[rotate=-76]
-						\begin{scope}[xshift=0.025 cm];
-							\draw[color=blue, fill=blue] (0,0)rectangle+(.15,1);
-							\draw[blue] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=blue, fill=blue, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=blue, fill=blue, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
-						\begin{scope}[xshift=-0.025 cm, xscale=-1];
-							\draw[color=blue, fill=blue] (0,0)rectangle+(.15,1);
-							\draw[blue] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=blue, fill=blue, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=blue, fill=blue, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
+						\lan
 						\shade [ball color=gold] (0,-.1) circle (0.15);
 					\end{scope}
 				\end{scope}
 				\begin{scope}[xshift=4.3cm,yshift=2 cm]%控
 					\begin{scope}[rotate=-45]
-						\begin{scope}[xshift=0.025 cm];
-							\draw[color=green, fill=green] (0,0)rectangle+(.15,1);
-							\draw[green] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=green, fill=green, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=green, fill=green, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
-						\begin{scope}[xshift=-0.025 cm, xscale=-1];
-							\draw[color=green, fill=green] (0,0)rectangle+(.15,1);
-							\draw[green] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=green, fill=green, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=green, fill=green, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
+						\lv
 						\shade [ball color=gold] (0,-.1) circle (0.15);
 					\end{scope}
 				\end{scope}
 				\foreach \x in {4.5,3.5,...,.5}{
 					\begin{scope}[scale=0.75,xshift=18cm,yshift=\x cm,xslant=-.4,yscale=2]%抗抗
 						\begin{scope}[rotate=0]
-							\begin{scope}[xshift=0.025 cm];
-								\draw[color=red, fill=red] (0,0)rectangle+(.15,1);
-								\draw[red] (0.1,.95)--(.175,1.15);
-								\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-									\draw[color=red, fill=red, rotate=-20]
-									(0,0)rectangle +(.125,.75);
-									\draw[color=red, fill=red, rotate=-20]
-									(0,0)rectangle +(.125/3,.85);
-								\end{scope}
-								\begin{scope}[xshift=.325 cm, yshift=1 cm]
-									\draw[color=orange, fill=orange, rotate=-20]
-									(0,0)rectangle +(-.125,.75);
-									\draw[color=orange, fill=orange, rotate=-20]
-									(0,0)rectangle +(-.125/3,.85);
-								\end{scope}
-							\end{scope}
-							\begin{scope}[xshift=-0.025 cm, xscale=-1];
-								\draw[color=red, fill=red] (0,0)rectangle+(.15,1);
-								\draw[red] (0.1,.95)--(.175,1.15);
-								\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-									\draw[color=red, fill=red, rotate=-20]
-									(0,0)rectangle +(.125,.75);
-									\draw[color=red, fill=red, rotate=-20]
-									(0,0)rectangle +(.125/3,.85);
-								\end{scope}
-								\begin{scope}[xshift=.325 cm, yshift=1 cm]
-									\draw[color=orange, fill=orange, rotate=-20]
-									(0,0)rectangle +(-.125,.75);
-									\draw[color=orange, fill=orange, rotate=-20]
-									(0,0)rectangle +(-.125/3,.85);
-								\end{scope}
-							\end{scope}
+							\hong
 						\end{scope}
 					\end{scope}	
 				}
@@ -713,38 +601,7 @@
 				\foreach \x in {4.5,3.5,...,.5}{
 					\begin{scope}[scale=0.75,xshift=14cm,yshift=\x cm,xslant=-.4,yscale=2]%抗抗
 						\begin{scope}[rotate=0]
-							\begin{scope}[xshift=0.025 cm];
-								\draw[color=blue, fill=blue] (0,0)rectangle+(.15,1);
-								\draw[blue] (0.1,.95)--(.175,1.15);
-								\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-									\draw[color=blue, fill=blue, rotate=-20]
-									(0,0)rectangle +(.125,.75);
-									\draw[color=blue, fill=blue, rotate=-20]
-									(0,0)rectangle +(.125/3,.85);
-								\end{scope}
-								\begin{scope}[xshift=.325 cm, yshift=1 cm]
-									\draw[color=orange, fill=orange, rotate=-20]
-									(0,0)rectangle +(-.125,.75);
-									\draw[color=orange, fill=orange, rotate=-20]
-									(0,0)rectangle +(-.125/3,.85);
-								\end{scope}
-							\end{scope}
-							\begin{scope}[xshift=-0.025 cm, xscale=-1];
-								\draw[color=blue, fill=blue] (0,0)rectangle+(.15,1);
-								\draw[blue] (0.1,.95)--(.175,1.15);
-								\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-									\draw[color=blue, fill=blue, rotate=-20]
-									(0,0)rectangle +(.125,.75);
-									\draw[color=blue, fill=blue, rotate=-20]
-									(0,0)rectangle +(.125/3,.85);
-								\end{scope}
-								\begin{scope}[xshift=.325 cm, yshift=1 cm]
-									\draw[color=orange, fill=orange, rotate=-20]
-									(0,0)rectangle +(-.125,.75);
-									\draw[color=orange, fill=orange, rotate=-20]
-									(0,0)rectangle +(-.125/3,.85);
-								\end{scope}
-							\end{scope}
+							\lan
 						\end{scope}
 					\end{scope}	
 				}
@@ -759,115 +616,23 @@
 			\draw (12.5+.25,-1.65)node[right]{抗原(核衣壳蛋白)};
 			\begin{scope}[yshift=0 cm,xshift=.4cm]
 				\begin{scope}[xshift=1 cm,yshift=-2.5 cm]%控
-					\node at (1.5,7/8) {抗体a};				\begin{scope}[rotate=0]
-						\begin{scope}[xshift=0.025 cm];
-							\draw[color=green, fill=green] (0,0)rectangle+(.15,1);
-							\draw[green] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=green, fill=green, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=green, fill=green, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
-						\begin{scope}[xshift=-0.025 cm, xscale=-1];
-							\draw[color=green, fill=green] (0,0)rectangle+(.15,1);
-							\draw[green] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=green, fill=green, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=green, fill=green, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
+					\node at (1.5,7/8) {抗体a};				
+					\begin{scope}[rotate=0]
+						\lv
 						\shade [ball color=gold] (0,-.1) circle (0.15);
 					\end{scope}
 				\end{scope}
 				\begin{scope}[xshift=5cm,yshift=-2.5 cm]%新抗
 					\node at (1.5,7/8) {抗体b};
 					\begin{scope}[rotate=0]
-						\begin{scope}[xshift=0.025 cm];
-							\draw[color=blue, fill=blue] (0,0)rectangle+(.15,1);
-							\draw[blue] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=blue, fill=blue, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=blue, fill=blue, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
-						\begin{scope}[xshift=-0.025 cm, xscale=-1];
-							\draw[color=blue, fill=blue] (0,0)rectangle+(.15,1);
-							\draw[blue] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=blue, fill=blue, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=blue, fill=blue, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
+						\lan
 						\shade [ball color=gold] (0,-.1) circle (0.15);
 					\end{scope}
 				\end{scope}
 				\begin{scope}[xshift=9cm,yshift=-2.5 cm]%抗抗
 					\node at (1.5,7/8) {抗体c};
 					\begin{scope}[rotate=0]
-						\begin{scope}[xshift=0.025 cm];
-							\draw[color=red, fill=red] (0,0)rectangle+(.15,1);
-							\draw[red] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=red, fill=red, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=red, fill=red, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
-						\begin{scope}[xshift=-0.025 cm, xscale=-1];
-							\draw[color=red, fill=red] (0,0)rectangle+(.15,1);
-							\draw[red] (0.1,.95)--(.175,1.15);
-							\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-								\draw[color=red, fill=red, rotate=-20]
-								(0,0)rectangle +(.125,.75);
-								\draw[color=red, fill=red, rotate=-20]
-								(0,0)rectangle +(.125/3,.85);
-							\end{scope}
-							\begin{scope}[xshift=.325 cm, yshift=1 cm]
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125,.75);
-								\draw[color=orange, fill=orange, rotate=-20]
-								(0,0)rectangle +(-.125/3,.85);
-							\end{scope}
-						\end{scope}
+						\hong
 					\end{scope}
 				\end{scope}
 			\end{scope}
