@@ -2,9 +2,9 @@
 \usepackage{mathtools,amssymb,array,amsthm,amsmath}%数学宏包
 \usepackage{geometry,ulem,graphicx,fancyhdr,color,tikz}%通用宏包
 \geometry{a4paper,left=1.5cm, right=1.5cm, 
-top=2.6cm, bottom=3cm}%页面布局
+	top=2.6cm, bottom=3cm}%页面布局
 \everymath{\displaystyle}%行间公式
-\usepackage{xeCJK}
+\usepackage{xeCJK,xcolor}
 \xeCJKsetup{
 	CJKecglue={\:}
 }
@@ -12,108 +12,6 @@ top=2.6cm, bottom=3cm}%页面布局
 \setlength{\lineskip}{8pt}
 \setlength{\lineskiplimit}{8pt}
 
-\newcommand{\lan}{
-	\begin{scope}[xshift=0.025 cm];
-		\draw[color=blue, fill=blue] (0,0)rectangle+(.15,1);
-		\draw[blue] (0.1,.95)--(.175,1.15);
-		\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-			\draw[color=blue, fill=blue, rotate=-20]
-			(0,0)rectangle +(.125,.75);
-			\draw[color=blue, fill=blue, rotate=-20]
-			(0,0)rectangle +(.125/3,.85);
-		\end{scope}
-		\begin{scope}[xshift=.325 cm, yshift=1 cm]
-			\draw[color=orange, fill=orange, rotate=-20]
-			(0,0)rectangle +(-.125,.75);
-			\draw[color=orange, fill=orange, rotate=-20]
-			(0,0)rectangle +(-.125/3,.85);
-		\end{scope}
-	\end{scope}
-	\begin{scope}[xshift=-0.025 cm, xscale=-1];
-		\draw[color=blue, fill=blue] (0,0)rectangle+(.15,1);
-		\draw[blue] (0.1,.95)--(.175,1.15);
-		\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-			\draw[color=blue, fill=blue, rotate=-20]
-			(0,0)rectangle +(.125,.75);
-			\draw[color=blue, fill=blue, rotate=-20]
-			(0,0)rectangle +(.125/3,.85);
-		\end{scope}
-		\begin{scope}[xshift=.325 cm, yshift=1 cm]
-			\draw[color=orange, fill=orange, rotate=-20]
-			(0,0)rectangle +(-.125,.75);
-			\draw[color=orange, fill=orange, rotate=-20]
-			(0,0)rectangle +(-.125/3,.85);
-		\end{scope}
-	\end{scope}
-}
-\newcommand{\hong}{
-	\begin{scope}[xshift=0.025 cm];
-		\draw[color=red, fill=red] (0,0)rectangle+(.15,1);
-		\draw[red] (0.1,.95)--(.175,1.15);
-		\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-			\draw[color=red, fill=red, rotate=-20]
-			(0,0)rectangle +(.125,.75);
-			\draw[color=red, fill=red, rotate=-20]
-			(0,0)rectangle +(.125/3,.85);
-		\end{scope}
-		\begin{scope}[xshift=.325 cm, yshift=1 cm]
-			\draw[color=orange, fill=orange, rotate=-20]
-			(0,0)rectangle +(-.125,.75);
-			\draw[color=orange, fill=orange, rotate=-20]
-			(0,0)rectangle +(-.125/3,.85);
-		\end{scope}
-	\end{scope}
-	\begin{scope}[xshift=-0.025 cm, xscale=-1];
-		\draw[color=red, fill=red] (0,0)rectangle+(.15,1);
-		\draw[red] (0.1,.95)--(.175,1.15);
-		\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-			\draw[color=red, fill=red, rotate=-20]
-			(0,0)rectangle +(.125,.75);
-			\draw[color=red, fill=red, rotate=-20]
-			(0,0)rectangle +(.125/3,.85);
-		\end{scope}
-		\begin{scope}[xshift=.325 cm, yshift=1 cm]
-			\draw[color=orange, fill=orange, rotate=-20]
-			(0,0)rectangle +(-.125,.75);
-			\draw[color=orange, fill=orange, rotate=-20]
-			(0,0)rectangle +(-.125/3,.85);
-		\end{scope}
-	\end{scope}
-}
-\newcommand{\lv}{
-	\begin{scope}[xshift=0.025 cm];
-		\draw[color=green, fill=green] (0,0)rectangle+(.15,1);
-		\draw[green] (0.1,.95)--(.175,1.15);
-		\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-			\draw[color=green, fill=green, rotate=-20]
-			(0,0)rectangle +(.125,.75);
-			\draw[color=green, fill=green, rotate=-20]
-			(0,0)rectangle +(.125/3,.85);
-		\end{scope}
-		\begin{scope}[xshift=.325 cm, yshift=1 cm]
-			\draw[color=orange, fill=orange, rotate=-20]
-			(0,0)rectangle +(-.125,.75);
-			\draw[color=orange, fill=orange, rotate=-20]
-			(0,0)rectangle +(-.125/3,.85);
-		\end{scope}
-	\end{scope}
-	\begin{scope}[xshift=-0.025 cm, xscale=-1];
-		\draw[color=green, fill=green] (0,0)rectangle+(.15,1);
-		\draw[green] (0.1,.95)--(.175,1.15);
-		\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
-			\draw[color=green, fill=green, rotate=-20]
-			(0,0)rectangle +(.125,.75);
-			\draw[color=green, fill=green, rotate=-20]
-			(0,0)rectangle +(.125/3,.85);
-		\end{scope}
-		\begin{scope}[xshift=.325 cm, yshift=1 cm]
-			\draw[color=orange, fill=orange, rotate=-20]
-			(0,0)rectangle +(-.125,.75);
-			\draw[color=orange, fill=orange, rotate=-20]
-			(0,0)rectangle +(-.125/3,.85);
-		\end{scope}
-	\end{scope}
-}
 \begin{document}
 	\setlength{\lineskip}{8pt}
 	\setlength{\lineskiplimit}{8pt}
@@ -128,22 +26,120 @@ top=2.6cm, bottom=3cm}%页面布局
 		\LARGE{\textbf{关于“新冠病毒核酸检测和抗原检测应用的技术原理”的简述报告}}
 	\end{center}
 	\mbox{\qquad}壬寅年初，疫情又起。核酸检测(常为咽拭子)与抗原检测(常为鼻拭子)便与我们的生活“不可分离”。
-	鉴于本学期学习了《普通高中教科书\quad 生物学\quad 选择性必修3\quad 生物技术与工程》，在此浅谈这两项技术的原理。
+	鉴于本学期学习了《普通高中教科书\:\:生物学\:\:选择性必修3\:\:生物技术与工程》，在此浅谈这两项技术的原理。
 	\part{核酸检测}
+	%碱基定义
+	\def\CD#1{
+		\edef\code{
+			\unexpanded{\begin{scope}[xshift=}#1
+				\unexpanded{cm, yshift=2.7 cm]%倒置C
+					\draw[fill=purple] (0,-1) -- (0,0)--(.5,0)--(.5,-1)arc (0:180:0.25);
+					\node at (.25,-.25) {C};
+			\end{scope}}
+		}\code
+	}
+	\def\GD#1{
+		\edef\code{
+			\unexpanded{\begin{scope}[xshift=}#1
+				\unexpanded{cm, yshift=2.7 cm]%倒置G
+					\draw[fill=blue] (0,-1.2) -- (0,0)--(.5,0)--(.5,-1.2)arc (0:-180:0.25);
+					\node at (.25,-.25) {G};
+			\end{scope}}
+		}\code
+	}
+	\def\AD#1{
+		\edef\code{
+			\unexpanded{\begin{scope}[xshift=}#1
+				\unexpanded{cm, yshift=2.7 cm]%倒置A
+					\draw[fill=yellow] (0,-1.2) -- (0,0)--(.5,0)--(.5,-1.2) --(.25,-1.45)--(0,-1.2);
+					\node at (.25,-.25) {A};
+				\end{scope}
+			}
+		}\code
+	}
+	\def\UD#1{
+		\edef\code{
+			\unexpanded{
+				\begin{scope}[xshift=}#1
+				\unexpanded{cm, yshift=2.7 cm]%倒置U
+					\draw[fill=orange] (0,-1) -- (0,0)--(.5,0)--(.5,-1) --(.25,-.75)--(0,-1);
+					\node at (.25,-.25) {U};
+				\end{scope}
+			}
+		}\code
+	}
+	\def\TD#1{
+		\edef\code{
+			\unexpanded{\begin{scope}[xshift=}#1
+				\unexpanded{cm, yshift=2.7 cm]%倒置T
+					\draw[fill=green] (0,-1) -- (0,0)--(.5,0)--(.5,-1) --(.25,-.75)--(0,-1);
+					\node at (.25,-.25) {T};
+				\end{scope}
+			}
+		}\code
+	}
+	\def\CU#1{
+		\edef\code{
+			\unexpanded{\begin{scope}[xshift=}#1
+				\unexpanded{cm, yshift=.3 cm]%正立C
+					\draw[fill=purple] (0,1) -- (0,0)--(.5,0)--(.5,1)arc (0:-180:0.25);
+					\node at (.25,.25) {C};
+			\end{scope}}
+		}\code
+	}
+	\def\GU#1{
+		\edef\code{
+			\unexpanded{\begin{scope}[xshift=}#1
+				\unexpanded{cm, yshift=.3 cm]%正立G
+					\draw[fill=blue] (0,1.2) -- (0,0)--(.5,0)--(.5,1.2)arc (0:180:0.25);
+					\node at (.25,.25) {G};
+			\end{scope}}
+		}\code
+	}
+	\def\AU#1{
+		\edef\code{
+			\unexpanded{\begin{scope}[xshift=}#1
+				\unexpanded{cm, yshift=.3 cm]%正立A
+					\draw[fill=yellow] (0,1.2) -- (0,0)--(.5,0)--(.5,1.2) --(.25,1.45)--(0,1.2);
+					\node at (.25,.25) {A};
+			\end{scope}}
+		}\code
+	}
+	\def\TU#1{
+		\edef\code{
+			\unexpanded{\begin{scope}[xshift=}#1
+				\unexpanded{cm, yshift=.3 cm]%正立T
+					\draw[fill=green] (0,1) -- (0,0)--(.5,0)--(.5,1) --(.25,.75)--(0,1);
+					\node at (.25,.25) {T};
+			\end{scope}}
+		}\code
+	}
+	\def\UU#1{
+		\edef\code{
+			\unexpanded{
+				\begin{scope}[xshift=}#1
+				\unexpanded{cm, yshift=.3 cm]%正立U
+					\draw[fill=orange] (0,1) -- (0,0)--(.5,0)--(.5,1) --(.25,.75)--(0,1);
+					\node at (.25,.25) {U};
+				\end{scope}
+			}
+		}\code
+	}
+	%碱基定义END
 	顾名思义，“核酸检测”检测的即为核酸。新冠病毒的遗传物质为RNA，检测的也就是其RNA吗？
-
+	
 	是也不是。
 	
 	其本质上，是通过RT(Reverse Transcription, 逆转录)-PCR(Polymerase Chain Reaction, 聚合酶链式反应)技术，
 	先将新冠病毒的核酸RNA进行逆转录为cDNA(complementary DNA, 互补脱氧核糖核酸)，再使用PCR技术，使这种cDNA进行扩增，
 	便于观察。
-
+	
 	当然这一切，都是要先从我们的咽拭子样本中提取出病毒的RNA。
 	具体来说，就是在样本中加入蛋白酶，把病毒破坏，让核酸释放出来。
 	\\\textbf{RT技术：}
-
+	
 	由于PCR的扩增对象只能是结构更加稳定的DNA，故先进行逆转录，再扩增。
-
+	
 	我们首先利用逆转录酶，以单链RNA为模板逆转录出cDNA的一条链，如图1所示：
 	\begin{figure}[htp!]
 		\centering
@@ -158,48 +154,13 @@ top=2.6cm, bottom=3cm}%页面布局
 			\draw (14.5,2.7)--node[right]{5'}+(0,.3);
 			\draw (0,2.7)--node[left]{3'}+(0,.3);
 			\draw (5.5,0)--node[right]{3'}+(0,.3);
-			\foreach \x in {4.75,5.5,7,7.75,8.5,11.5,13.75}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置C
-				\draw[fill=purple] (0,-1) -- (0,0)--(.5,0)--(.5,-1)arc (0:180:0.25);
-				\node at (.25,-.25) {C};
-			\end{scope}
-		}
-			\foreach \x in {.25,1.75,2.5,4,6.25,9.25,10.75}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置G
-					\draw[fill=blue] (0,-1.2) -- (0,0)--(.5,0)--(.5,-1.2)arc (0:-180:0.25);
-					\node at (.25,-.25) {G};
-				\end{scope}
-			}
-			\foreach \x in {1,3.25,12.25}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置A
-					\draw[fill=yellow] (0,-1.2) -- (0,0)--(.5,0)--(.5,-1.2) --(.25,-1.45)--(0,-1.2);
-					\node at (.25,-.25) {A};
-				\end{scope}
-			}
-			\foreach \x in {13,10}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置U
-					\draw[fill=orange] (0,-1) -- (0,0)--(.5,0)--(.5,-1) --(.25,-.75)--(0,-1);
-					\node at (.25,-.25) {U};
-				\end{scope}
-			}
-			\foreach \x in{.25,1.75,2.5,4}{
-				\begin{scope}[xshift=\x cm,yshift=0.3cm]%正立C
-					\draw[fill=purple] (0,1) -- (0,0)--(.5,0)--(.5,1)arc (0:-180:0.25);
-					\node at (.25,.25) {C};
-				\end{scope}	
-		}
-			\foreach \x in {1,3.25}{
-				\begin{scope}[xshift=\x cm, yshift=.3 cm]%正立T
-					\draw[fill=green] (0,1) -- (0,0)--(.5,0)--(.5,1) --(.25,.75)--(0,1);
-					\node at (.25,.25) {T};
-				\end{scope}
-			}
-			\foreach \x in {4.75}{
-				\begin{scope}[xshift=\x cm, yshift=.3 cm]%正立G
-					\draw[fill=blue] (0,1.2) -- (0,0)--(.5,0)--(.5,1.2)arc (0:180:0.25);
-					\node at (.25,.25) {G};
-				\end{scope}
-			}
+			\foreach \x in {4.75,5.5,7,7.75,8.5,11.5,13.75} \CD{\x};
+			\foreach \x in {.25,1.75,2.5,4,6.25,9.25,10.75} \GD{\x};
+			\foreach \x in {1,3.25,12.25} \AD{\x};
+			\foreach \x in {13,10} \UD{\x};
+			\foreach \x in{.25,1.75,2.5,4} \CU{\x};
+			\foreach \x in {1,3.25} \TU{\x};
+			\foreach \x in {4.75} \GU{\x};
 			\draw[fill=pink] (6.1,-.25) -- (12.5,-.25)--(12.5,-.5)--(14.5,.15)--(12.5,.8)--(12.5,.55)--(6.1,.55)--(6.1,-.25);
 			\node at (9.3,.15) {逆转录酶};
 			\node at (3,-.3) {cDNA};
@@ -221,60 +182,20 @@ top=2.6cm, bottom=3cm}%页面布局
 			\draw (14.5,2.7)--node[right]{5'}+(0,.3);
 			\draw (0,2.7)--node[left]{3'}+(0,.3);
 			\draw (14.5,0)--node[right]{3'}+(0,.3);
-			\foreach \x in {4.75,5.5,7,7.75,8.5,11.5,13.75}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置C
-				\draw[fill=purple] (0,-1) -- (0,0)--(.5,0)--(.5,-1)arc (0:180:0.25);
-				\node at (.25,-.25) {C};
-		\end{scope}
-		}
-			\foreach \x in {.25,1.75,2.5,4,6.25,9.25,10.75}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置G
-					\draw[fill=blue] (0,-1.2) -- (0,0)--(.5,0)--(.5,-1.2)arc (0:-180:0.25);
-					\node at (.25,-.25) {G};
-				\end{scope}
-			}
-			\foreach \x in {1,3.25,12.25}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置A
-					\draw[fill=yellow] (0,-1.2) -- (0,0)--(.5,0)--(.5,-1.2) --(.25,-1.45)--(0,-1.2);
-					\node at (.25,-.25) {A};
-				\end{scope}
-			}
-			\foreach \x in {13,10}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置U
-					\draw[fill=orange] (0,-1) -- (0,0)--(.5,0)--(.5,-1) --(.25,-.75)--(0,-1);
-					\node at (.25,-.25) {U};
-				\end{scope}
-			}
-			\foreach \x in{.25,1.75,2.5,4,6.25,9.25,10.75}{
-				\begin{scope}[xshift=\x cm,yshift=0.3cm]%正立C
-					\draw[fill=purple] (0,1) -- (0,0)--(.5,0)--(.5,1)arc (0:-180:0.25);
-					\node at (.25,.25) {C};
-				\end{scope}	
-		}
-			\foreach \x in {1,3.25,12.25}{
-				\begin{scope}[xshift=\x cm, yshift=.3 cm]%正立T
-					\draw[fill=green] (0,1) -- (0,0)--(.5,0)--(.5,1) --(.25,.75)--(0,1);
-					\node at (.25,.25) {T};
-				\end{scope}
-			}
-			\foreach \x in {4.75,5.5,7,7.75,8.5,11.5,13.75}{
-				\begin{scope}[xshift=\x cm, yshift=.3 cm]%正立G
-					\draw[fill=blue] (0,1.2) -- (0,0)--(.5,0)--(.5,1.2)arc (0:180:0.25);
-					\node at (.25,.25) {G};
-				\end{scope}
-			}
-			\foreach \x in {13,10}{
-				\begin{scope}[xshift=\x cm, yshift=.3 cm]%正立A
-					\draw[fill=yellow] (0,1.2) -- (0,0)--(.5,0)--(.5,1.2) --(.25,1.45)--(0,1.2);
-					\node at (.25,.25) {A};
-				\end{scope}
-			}
+			\foreach \x in {4.75,5.5,7,7.75,8.5,11.5,13.75} \CD{\x};
+			\foreach \x in {.25,1.75,2.5,4,6.25,9.25,10.75} \GD{\x};
+			\foreach \x in {1,3.25,12.25} \AD{\x};
+			\foreach \x in {13,10} \UD{\x};
+			\foreach \x in{.25,1.75,2.5,4,6.25,9.25,10.75} \CU{\x};
+			\foreach \x in {1,3.25,12.25} \TU{\x};
+			\foreach \x in {4.75,5.5,7,7.75,8.5,11.5,13.75} \GU{\x};
+			\foreach \x in {13,10} \AU{\x};
 			\node at (7.25,-.3) {cDNA};
 			\node at (7.25,3+.3) {RNA};
 			\node at (7.25,-1) {图2};
 		\end{tikzpicture}
 	\end{figure}
-
+	
 	跟我们的目的是获得稳定的cDNA，图2所示显然不满足要求，
 	需要将RNA链替换为与下方cDNA链互补的cDNA链，故利用一种特殊的DNA聚合酶，
 	在降解原有的RNA链同时，聚合上脱氧核苷酸并链接其之间的磷酸二酯键，过程如图3所示：
@@ -294,54 +215,14 @@ top=2.6cm, bottom=3cm}%页面布局
 			\draw (14.5,2.7)--node[right]{5'}+(0,.3);
 			\draw (9.75,2.7)--node[left]{3'}+(0,.3);
 			\draw (14.5,0)--node[right]{3'}+(0,.3);
-			\foreach \x in {11.5,13.75}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置C
-					\draw[fill=purple] (0,-1) -- (0,0)--(.5,0)--(.5,-1)arc (0:180:0.25);
-					\node at (.25,-.25) {C};
-				\end{scope}
-			}
-			\foreach \x in {.25,1.75,2.5,10.75}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置G
-					\draw[fill=blue] (0,-1.2) -- (0,0)--(.5,0)--(.5,-1.2)arc (0:-180:0.25);
-					\node at (.25,-.25) {G};
-				\end{scope}
-			}
-			\foreach \x in {1,3.25,12.25}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置A
-					\draw[fill=yellow] (0,-1.2) -- (0,0)--(.5,0)--(.5,-1.2) --(.25,-1.45)--(0,-1.2);
-					\node at (.25,-.25) {A};
-				\end{scope}
-			}
-			\foreach \x in {13,10}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置U
-					\draw[fill=orange] (0,-1) -- (0,0)--(.5,0)--(.5,-1) --(.25,-.75)--(0,-1);
-					\node at (.25,-.25) {U};
-				\end{scope}
-			}
-			\foreach \x in{.25,1.75,2.5,4,6.25,9.25,10.75}{
-				\begin{scope}[xshift=\x cm,yshift=0.3cm]%正立C
-					\draw[fill=purple] (0,1) -- (0,0)--(.5,0)--(.5,1)arc (0:-180:0.25);
-					\node at (.25,.25) {C};
-				\end{scope}	
-			}
-			\foreach \x in {1,3.25,12.25}{
-				\begin{scope}[xshift=\x cm, yshift=.3 cm]%正立T
-					\draw[fill=green] (0,1) -- (0,0)--(.5,0)--(.5,1) --(.25,.75)--(0,1);
-					\node at (.25,.25) {T};
-				\end{scope}
-			}
-			\foreach \x in {4.75,5.5,7,7.75,8.5,11.5,13.75}{
-				\begin{scope}[xshift=\x cm, yshift=.3 cm]%正立G
-					\draw[fill=blue] (0,1.2) -- (0,0)--(.5,0)--(.5,1.2)arc (0:180:0.25);
-					\node at (.25,.25) {G};
-				\end{scope}
-			}
-			\foreach \x in {13,10}{
-				\begin{scope}[xshift=\x cm, yshift=.3 cm]%正立A
-					\draw[fill=yellow] (0,1.2) -- (0,0)--(.5,0)--(.5,1.2) --(.25,1.45)--(0,1.2);
-					\node at (.25,.25) {A};
-				\end{scope}
-			}
+			\foreach \x in {11.5,13.75} \CD{\x};
+			\foreach \x in {.25,1.75,2.5,10.75} \GD{\x};
+			\foreach \x in {1,3.25,12.25} \AD{\x};
+			\foreach \x in {13,10} \UD{\x};
+			\foreach \x in{.25,1.75,2.5,4,6.25,9.25,10.75} \CU{\x};
+			\foreach \x in {1,3.25,12.25} \TU{\x};
+			\foreach \x in {4.75,5.5,7,7.75,8.5,11.5,13.75} \GU{\x};
+			\foreach \x in {13,10} \AU{\x};
 			\begin{scope}[yshift=2.7 cm]
 				\draw[fill=pink] (4.5,-.25) -- (7,-.25)--(7,-.5)--(9.25,.15)--(7,.8)--(7,.55)--(4.5,.55)--(4.5,-.25);
 				\node at (6.5,.15) {特殊的DNA聚合酶};
@@ -366,65 +247,25 @@ top=2.6cm, bottom=3cm}%页面布局
 			\draw (14.5,2.7)--node[right]{5'}+(0,.3)
 			node[below=.25cm]{$\alpha$};
 			\draw (14.5,0)node[above=.2cm]{$\beta$}--node[right]{3'}+(0,.3);
-			\foreach \x in {4.75,5.5,7,7.75,8.5,11.5,13.75}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置C
-					\draw[fill=purple] (0,-1) -- (0,0)--(.5,0)--(.5,-1)arc (0:180:0.25);
-					\node at (.25,-.25) {C};
-				\end{scope}
-			}
-			\foreach \x in {.25,1.75,2.5,4,6.25,9.25,10.75}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置G
-					\draw[fill=blue] (0,-1.2) -- (0,0)--(.5,0)--(.5,-1.2)arc (0:-180:0.25);
-					\node at (.25,-.25) {G};
-				\end{scope}
-			}
-			\foreach \x in {1,3.25,12.25}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置A
-					\draw[fill=yellow] (0,-1.2) -- (0,0)--(.5,0)--(.5,-1.2) --(.25,-1.45)--(0,-1.2);
-					\node at (.25,-.25) {A};
-				\end{scope}
-			}
-			\foreach \x in {13,10}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置T
-					\draw[fill=green] (0,-1) -- (0,0)--(.5,0)--(.5,-1) --(.25,-.75)--(0,-1);
-					\node at (.25,-.25) {T};
-				\end{scope}
-			}
-			\foreach \x in{.25,1.75,2.5,4,6.25,9.25,10.75}{
-				\begin{scope}[xshift=\x cm,yshift=0.3cm]%正立C
-					\draw[fill=purple] (0,1) -- (0,0)--(.5,0)--(.5,1)arc (0:-180:0.25);
-					\node at (.25,.25) {C};
-				\end{scope}	
-			}
-			\foreach \x in {1,3.25,12.25}{
-				\begin{scope}[xshift=\x cm, yshift=.3 cm]%正立T
-					\draw[fill=green] (0,1) -- (0,0)--(.5,0)--(.5,1) --(.25,.75)--(0,1);
-					\node at (.25,.25) {T};
-				\end{scope}
-			}
-			\foreach \x in {4.75,5.5,7,7.75,8.5,11.5,13.75}{
-				\begin{scope}[xshift=\x cm, yshift=.3 cm]%正立G
-					\draw[fill=blue] (0,1.2) -- (0,0)--(.5,0)--(.5,1.2)arc (0:180:0.25);
-					\node at (.25,.25) {G};
-				\end{scope}
-			}
-			\foreach \x in {13,10}{
-				\begin{scope}[xshift=\x cm, yshift=.3 cm]%正立A
-					\draw[fill=yellow] (0,1.2) -- (0,0)--(.5,0)--(.5,1.2) --(.25,1.45)--(0,1.2);
-					\node at (.25,.25) {A};
-				\end{scope}
-			}
+			\foreach \x in {4.75,5.5,7,7.75,8.5,11.5,13.75} \CD{\x};
+			\foreach \x in {.25,1.75,2.5,4,6.25,9.25,10.75} \GD{\x};
+			\foreach \x in {1,3.25,12.25} \AD{\x};
+			\foreach \x in {13,10} \TD{\x};
+			\foreach \x in{.25,1.75,2.5,4,6.25,9.25,10.75} \CU{\x};
+			\foreach \x in {1,3.25,12.25} \TU{\x};
+			\foreach \x in {4.75,5.5,7,7.75,8.5,11.5,13.75} \GU{\x};
+			\foreach \x in {13,10} \AU{\x};
 			\node at (7.25,-.3) {cDNA};
 			\node at (7.25,3+.3) {cDNA};
 			\node at (7.25,-1) {图4};
 		\end{tikzpicture}
 	\end{figure}
-
+	
 	这样，就完成了逆转录即RT技术的全程。
 	\\\textbf{PCR技术(荧光)：}
-
+	
 	鉴于教科书中对此部分有些许介绍，故不介绍其基本原理，只说明在荧光探针的辅助下的作用原理。
-
+	
 	以$\alpha$链的扩增为例(假设$\beta$链上不含有能与荧光探针
 	互补的片段，故略去$\beta$链)，如图5所示，引物$\alpha$与3'段结合，
 	而荧光探针与中间的某一片段结合：\begin{figure}[htp!]
@@ -446,54 +287,14 @@ top=2.6cm, bottom=3cm}%页面布局
 			\draw (7.5,0)--node[left]{5'}+(0,.3);
 			\draw (10.75,0)--node[right]{3'}+(0,.3);
 			;
-			\foreach \x in {4.75,5.5,7,7.75,8.5,11.5,13.75}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置C
-					\draw[fill=purple] (0,-1) -- (0,0)--(.5,0)--(.5,-1)arc (0:180:0.25);
-					\node at (.25,-.25) {C};
-				\end{scope}
-			}
-			\foreach \x in {.25,1.75,2.5,4,6.25,9.25,10.75}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置G
-					\draw[fill=blue] (0,-1.2) -- (0,0)--(.5,0)--(.5,-1.2)arc (0:-180:0.25);
-					\node at (.25,-.25) {G};
-				\end{scope}
-			}
-			\foreach \x in {1,3.25,12.25}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置A
-					\draw[fill=yellow] (0,-1.2) -- (0,0)--(.5,0)--(.5,-1.2) --(.25,-1.45)--(0,-1.2);
-					\node at (.25,-.25) {A};
-				\end{scope}
-			}
-			\foreach \x in {13,10}{
-				\begin{scope}[xshift=\x cm, yshift=2.7 cm]%倒置T
-					\draw[fill=green] (0,-1) -- (0,0)--(.5,0)--(.5,-1) --(.25,-.75)--(0,-1);
-					\node at (.25,-.25) {T};
-				\end{scope}
-			}
-			\foreach \x in{.25,1.75,9.25}{
-				\begin{scope}[xshift=\x cm,yshift=0.3cm]%正立C
-					\draw[fill=purple] (0,1) -- (0,0)--(.5,0)--(.5,1)arc (0:-180:0.25);
-					\node at (.25,.25) {C};
-				\end{scope}	
-			}
-			\foreach \x in {1}{
-				\begin{scope}[xshift=\x cm, yshift=.3 cm]%正立T
-					\draw[fill=green] (0,1) -- (0,0)--(.5,0)--(.5,1) --(.25,.75)--(0,1);
-					\node at (.25,.25) {T};
-				\end{scope}
-			}
-			\foreach \x in {7.75,8.5}{
-				\begin{scope}[xshift=\x cm, yshift=.3 cm]%正立G
-					\draw[fill=blue] (0,1.2) -- (0,0)--(.5,0)--(.5,1.2)arc (0:180:0.25);
-					\node at (.25,.25) {G};
-				\end{scope}
-			}
-			\foreach \x in {10}{
-				\begin{scope}[xshift=\x cm, yshift=.3 cm]%正立A
-					\draw[fill=yellow] (0,1.2) -- (0,0)--(.5,0)--(.5,1.2) --(.25,1.45)--(0,1.2);
-					\node at (.25,.25) {A};
-				\end{scope}
-			}
+			\foreach \x in {4.75,5.5,7,7.75,8.5,11.5,13.75} \CD{\x};
+			\foreach \x in {.25,1.75,2.5,4,6.25,9.25,10.75} \GD{\x};
+			\foreach \x in {1,3.25,12.25} \AD{\x};
+			\foreach \x in {13,10} \TD{\x};
+			\foreach \x in{.25,1.75,9.25} \CU{\x};
+			\foreach \x in {1} \TU{\x};
+			\foreach \x in {7.75,8.5} \GU{\x};
+			\foreach \x in {10} \AU{\x};
 			\begin{scope}[yshift=0 cm]
 				\draw[fill=pink] (3,-.25) -- (5.5,-.25)--(5.5,-.5)--(7,.15)--(5.5,.8)--(5.5,.55)--(3,.55)--(3,-.25);
 				\node at (4.75,.15) {\textit{Taq} DNA聚合酶};
@@ -504,10 +305,10 @@ top=2.6cm, bottom=3cm}%页面布局
 			\node at (7.25,-1) {图5};
 		\end{tikzpicture}
 	\end{figure}
-
-	随着\textit{Taq} 聚合酶的推进，荧光探针逐渐被破坏，发出荧光，
+	
+	随着\textit{Taq} DNA聚合酶的推进，荧光探针逐渐被破坏，发出荧光，
 	PCR检测仪接接收到荧光信号，并记录这个的数目。
-
+	
 	假设最开始有$N$个双链cDNA，则显然第$n$个循环后，
 	理论产生的荧光次数\begin{align*}
 		t_n&=N\cdot2^n\cdot\dfrac{1}{2}
@@ -516,24 +317,60 @@ top=2.6cm, bottom=3cm}%页面布局
 	
 	一般取$35\sim 40$个循环后的结果，
 	若此时$t_n$的特别的大，则认为是阳性，否则为阴性。
-
+	
 	至此，核酸检测的所有步骤结束。
 	\part{抗原检测}
-
+	
 	下面介绍鼻拭子即抗原检测的原理。
-
+	
 	从病毒的结构上讲，其表面有多种蛋白，如S蛋白、M蛋白、核衣壳蛋白等。
 	为了检测的高效性，一般取用最多的核衣壳蛋白，其在病毒侵染受感染者的
 	呼吸道上皮细胞时，便会产生这种蛋白。
-
+	
 	我们将鼻拭子塞入鼻腔，转动的过程中就很好的接触了上皮细胞，并使得病毒
 	附着在了鼻拭子的棉头上。随后，我们将鼻拭子棉头放入缓冲液中，挤压、搅拌，使得
 	抗原(核衣壳蛋白)释放于溶液中，随后便进入关键步骤：试剂盒对缓冲液的检测。
-
+	
 	首先我们要先了解试剂盒的结构。其表面有样品孔(滴入缓冲液的孔)与检测线(Test Line即T)和对照线(Control Line即C)。
 	而其内部结构如图6所示：
 	\begin{figure}[htp!]
 		\centering
+		%抗体定义
+		\def\KT#1#2{
+			\edef\code{
+				\unexpanded{
+					\begin{scope}[xshift=}#2\unexpanded{*0.025 cm, xscale=}#2\unexpanded{];
+						\draw[color=}#1\unexpanded{, fill=}#1\unexpanded{] (0,0)rectangle+(.15,1);
+						\draw[}#1\unexpanded{] (0.1,.95)--(.175,1.15);
+						\begin{scope}[xshift=.05 cm, yshift=1.1 cm]
+							\draw[color=}#1\unexpanded{, fill=}#1\unexpanded{, rotate=-20]
+							(0,0)rectangle +(.125,.75);
+							\draw[color=}#1\unexpanded{, fill=}#1\unexpanded{, rotate=-20]
+							(0,0)rectangle +(.125/3,.85);
+						\end{scope}
+						\begin{scope}[xshift=.325 cm, yshift=1 cm]
+							\draw[color=orange, fill=orange, rotate=-20]
+							(0,0)rectangle +(-.125,.75);
+							\draw[color=orange, fill=orange, rotate=-20]
+							(0,0)rectangle +(-.125/3,.85);
+						\end{scope}
+					\end{scope}
+				}
+			}\code
+		}
+		\newcommand{\lan}{
+			\KT{blue}{1}
+			\KT{blue}{-1}
+		}
+		\newcommand{\hong}{
+			\KT{red}{1}
+			\KT{red}{-1}
+		}
+		\newcommand{\lv}{
+			\KT{green}{1}
+			\KT{green}{-1}
+		}
+		%抗体定义END
 		\begin{tikzpicture}
 			\definecolor{pink}{RGB}{234,98,223};
 			\definecolor{blue}{RGB}{0,169,204};
@@ -640,17 +477,17 @@ top=2.6cm, bottom=3cm}%页面布局
 			\node at (9,-3.2) {图6};
 		\end{tikzpicture}
 	\end{figure}
-
+	
 	液体由右向左流动。
 	
 	聚集垫内的抗体a为用金纳米颗粒标记的鸡I-G-Y抗体，
 	C区涂有小鼠单克隆抗鸡I-G-Y(即抗体a)的抗体，结合后，
 	通过金纳米颗粒对光的相互作用，可以辨别是否有效。
-
+	
 	而抗体b则为用金纳米颗粒标记的新冠病毒二抗复合体，可与抗原即核衣壳蛋白结合，
 	进而在T区涂有的新冠病毒二抗复合体(未用金纳米颗粒标记，
 	也可以为其他可和核衣壳蛋白结合的抗体)也与核衣壳蛋白结合，产生了显色效应，以判断是否为阳性。
-
+	
 	若未感染，则不会出现高亮条带，故可以通其检测抗原来辨别受测者是否被感染。
 	\clearpage
 	近些年来，疫情频发，这样与病毒的对抗是没有尽头的，我们必须
@@ -658,19 +495,22 @@ top=2.6cm, bottom=3cm}%页面布局
 	生物武器的不可控性在历史中已经有所见证，愿人类吸取教训，
 	共造美好明天。
 	\\\,\\\,\\\,\\\,\\\,\\\,\\\,
+	\\\,\\\,\\\,\\\,\\\,\\\,\\\,
+	\\\,\\\,\\\,\\\,\\\,\\\,\\\,
+	\\\,\\\,\\\,\\\,
 	\\\textbf{源码及PDF文档下载：}
-
+	
 	本文档源码的GitHub仓库地址为：https://github.com/CaiJi-Feizao/Biology-Report-20220522，下载请在
 	右侧Release处进行(可选源码Source Code或PDF发行版)。
-
+	
 	更多详细信息请见目录下README.md文件。
 	\\\textbf{纠错：}
 	
 	可在GitHub提出Issue或发送问题至QQ
 	与微信私信抑或邮箱1077386304@qq.com，愿您不吝赐教。
 	\\\textbf{引用：}
-
+	
 	https://www.bilibili.com/video/BV1ya411e7TJ
-
+	
 	https://www.bilibili.com/video/BV1Gq4y1k7uH
 \end{document}
